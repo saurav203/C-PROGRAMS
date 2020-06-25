@@ -1,16 +1,18 @@
-#    include<stdio.h>
+#include<stdio.h>
 #include<conio.h>
-main()
+int main()
 {
-int i,j;
-clrscr();
-for(i=1;i<=4;i++)
+int i,j,k;
+clrscr() ;
+for(i=1;i<=5;i++)
 {
-for(j=1;j<=8;j++)
+k=0;
+for(j=1;j<=5;j++)
 {
-if(j>=5-i&&j<=9-i)
+if(j<=i)
 {
-printf("*");
+printf("%d ",k);
+k=k+i-1;
 }
 else
 printf(" ");
